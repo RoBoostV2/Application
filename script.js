@@ -120,26 +120,33 @@ function startDownload(platform) {
 }
 
 function triggerDownload(platform) {
-    // In a real application, this would download the actual file
     const downloadUrls = {
-        'windows': '#', // Replace with actual download URL
-        'mac': '#',     // Replace with actual download URL
-        'linux': '#'    // Replace with actual download URL
+        'windows': 'https://www.dropbox.com/scl/fi/d7zvqybx3vt7ur1u70woi/RoboostUi.exe?rlkey=y8s9jthsito7apu1bk5fgkahd&st=3ud5jpo4&dl=1',
+        'mac': 'https://www.dropbox.com/scl/fi/d7zvqybx3vt7ur1u70woi/RoboostUi.exe?rlkey=y8s9jthsito7apu1bk5fgkahd&st=3ud5jpo4&dl=1',
+        'linux': 'https://www.dropbox.com/scl/fi/d7zvqybx3vt7ur1u70woi/RoboostUi.exe?rlkey=y8s9jthsito7apu1bk5fgkahd&st=3ud5jpo4&dl=1'
     };
     
-    // Simulate file download (in real app, this would be actual file URLs)
-    console.log(`Starting download for ${platform}`);
+    const downloadUrl = downloadUrls[platform];
     
-    // Close modal after a delay
-    setTimeout(() => {
-        const modal = document.getElementById('downloadModal');
-        if (modal) {
-            modal.style.display = 'none';
-        }
+    if (downloadUrl) {
+        console.log(`Starting download for ${platform}`);
         
-        // Show success notification
-        showNotification(`Download started for ${platform}!`, 'success');
-    }, 2000);
+        // Open download URL in new tab
+        window.open(downloadUrl, '_blank');
+        
+        // Close modal after a short delay
+        setTimeout(() => {
+            const modal = document.getElementById('downloadModal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+            
+            // Show success notification
+            showNotification(`Download started for ${platform}!`, 'success');
+        }, 1000);
+    } else {
+        showNotification(`Download not available for ${platform}`, 'error');
+    }
 }
 
 // FAQ functionality
