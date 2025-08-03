@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoBoost V2 - Download & Installation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>RoBoost V2</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#installation" class="nav-link">Installation</a>
+                <a href="#support" class="nav-link">Support</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-icon">
+                <div class="rocket-container">
+                    <i class="fas fa-rocket rocket-icon"></i>
+                </div>
+            </div>
+            <h1 class="hero-title">RoBoost V2</h1>
+            <p class="hero-subtitle">Advanced System Optimization & Performance Enhancement</p>
+            <div class="hero-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="heroProgress"></div>
+                </div>
+                <p class="progress-text">Ready for Download</p>
+            </div>
+            <div class="hero-actions">
+                <a href="#download" class="btn btn-primary">
+                    <i class="fas fa-download"></i>
+                    Download Now
+                </a>
+                <a href="#installation" class="btn btn-secondary">
+                    <i class="fas fa-book"></i>
+                    Installation Guide
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section download-section">
+        <div class="container">
+            <h2 class="section-title">Download Options</h2>
+            <p class="section-subtitle">Choose the best version for your system</p>
+            
+            <div class="download-options">
+                <!-- Featured Download -->
+                <div class="featured-download">
+                    <div class="featured-badge">
+                        <i class="fas fa-crown"></i>
+                        Recommended
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-icon">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <div class="featured-info">
+                            <h3>RoBoost V2 for Windows</h3>
+                            <p>Latest version with all features unlocked</p>
+                            <div class="featured-details">
+                                <span class="detail-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    Windows 10/11 Compatible
+                                </span>
+                                <span class="detail-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    Real-time Performance Boost
+                                </span>
+                                <span class="detail-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    One-Click Optimization
+                                </span>
+                            </div>
+                        </div>
+                        <div class="featured-actions">
+                            <div class="download-info">
+                                <span class="version">v2.1.4</span>
+                                <span class="size">220 MB</span>
+                            </div>
+                            <button class="btn btn-primary btn-large download-btn" data-platform="windows">
+                                <i class="fas fa-download"></i>
+                                Download for Windows
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternative Downloads -->
+                <div class="alternative-downloads">
+                    <h3>Other Platforms</h3>
+                    <div class="platform-list">
+                        <div class="platform-item">
+                            <div class="platform-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <div class="platform-info">
+                                <h4>macOS</h4>
+                                <span>v2.1.3 • 190 MB</span>
+                            </div>
+                            <button class="btn btn-secondary download-btn" data-platform="mac">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </button>
+                        </div>
+                        
+                        <div class="platform-item">
+                            <div class="platform-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <div class="platform-info">
+                                <h4>Linux</h4>
+                                <span>v2.1.2 • 180 MB</span>
+                            </div>
+                            <button class="btn btn-secondary download-btn" data-platform="linux">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </button>
+                        </div>
+                        
+                        <div class="platform-item">
+                            <div class="platform-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="platform-info">
+                                <h4>Mobile App</h4>
+                                <span>Coming Soon</span>
+                            </div>
+                            <button class="btn btn-secondary" disabled>
+                                <i class="fas fa-clock"></i>
+                                Soon
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="download-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2.5M+</div>
+                        <div class="stat-label">Downloads</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.8★</div>
+                        <div class="stat-label">Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Safe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="section installation-section">
+        <div class="container">
+            <h2 class="section-title">Installation Guide</h2>
+            <p class="section-subtitle">Follow these simple steps to get started</p>
+            
+            <div class="installation-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-main">
+                            <h3>Download the Installer</h3>
+                            <p>Select your operating system from the download section above and click the download button. The installer file will be saved to your Downloads folder.</p>
+                            
+                            <div class="step-details">
+                                <div class="step-text">
+                                    <h4>What happens during download:</h4>
+                                    <ul>
+                                        <li>File verification ensures integrity</li>
+                                        <li>Automatic platform detection</li>
+                                        <li>Download progress tracking</li>
+                                        <li>Secure connection validation</li>
+                                    </ul>
+                                    
+                                    <div class="step-note">
+                                        <i class="fas fa-info-circle"></i>
+                                        <span>Download size: ~220MB for Windows, may vary by platform</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-download"></i>
+                                        <span>Download Screen</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%;"></div>
+                            </div>
+                            <span class="progress-label">Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-main">
+                            <h3>Run the Installer</h3>
+                            <p>Locate the downloaded file in your Downloads folder and double-click to run it. You may need administrator privileges for installation.</p>
+                            
+                            <div class="step-details">
+                                <div class="step-text">
+                                    <h4>Installation process:</h4>
+                                    <ul>
+                                        <li>Right-click installer and select "Run as administrator"</li>
+                                        <li>Accept the license agreement</li>
+                                        <li>Choose installation directory (default recommended)</li>
+                                        <li>Select additional components if needed</li>
+                                    </ul>
+                                    
+                                    <div class="step-warning">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <span>Windows may show a security warning - this is normal for new software</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Installation Wizard</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%;"></div>
+                            </div>
+                            <span class="progress-label">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-main">
+                            <h3>Configure Settings</h3>
+                            <p>Launch RoBoost V2 from your desktop or start menu. The first-time setup wizard will guide you through optimal configuration.</p>
+                            
+                            <div class="step-details">
+                                <div class="step-text">
+                                    <h4>Configuration options:</h4>
+                                    <ul>
+                                        <li>Performance mode selection (Conservative/Balanced/Aggressive)</li>
+                                        <li>Startup optimization preferences</li>
+                                        <li>Background monitoring settings</li>
+                                        <li>Automatic update configuration</li>
+                                    </ul>
+                                    
+                                    <div class="step-tip">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span>Balanced mode is recommended for most users</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-sliders-h"></i>
+                                        <span>Settings Panel</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 50%;"></div>
+                            </div>
+                            <span class="progress-label">Setup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <div class="step-main">
+                            <h3>Start Boosting</h3>
+                            <p>Your system is now ready! Click the "Start Optimization" button in the main interface to begin boosting your system performance.</p>
+                            
+                            <div class="step-details">
+                                <div class="step-text">
+                                    <h4>What RoBoost V2 will do:</h4>
+                                    <ul>
+                                        <li>Analyze system performance bottlenecks</li>
+                                        <li>Optimize memory usage and cleanup</li>
+                                        <li>Improve startup and shutdown times</li>
+                                        <li>Monitor and report performance gains</li>
+                                    </ul>
+                                    
+                                    <div class="step-success">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>You'll see immediate improvements in system responsiveness</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-rocket"></i>
+                                        <span>Main Dashboard</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%;"></div>
+                            </div>
+                            <span class="progress-label">Ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is RoBoost V2 safe to use?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, RoBoost V2 is completely safe and has been tested on thousands of systems. It only makes safe optimizations and never modifies critical system files.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need to restart my computer after installation?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A restart is recommended but not required. Some optimizations will take effect immediately, while others may require a restart for full effectiveness.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I uninstall RoBoost V2 if I don't like it?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! RoBoost V2 can be uninstalled like any other program through your system's control panel or settings menu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="section support-section">
+        <div class="container">
+            <h2 class="section-title">Need Help?</h2>
+            <p class="section-subtitle">Our support team is here to help you</p>
+            <div class="support-options">
+                <div class="support-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team</p>
+                    <button class="btn btn-primary">Start Chat</button>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Support</h3>
+                    <p>Send us your questions</p>
+                    <button class="btn btn-primary">Send Email</button>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Documentation</h3>
+                    <p>Browse our help articles</p>
+                    <button class="btn btn-primary">View Docs</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>RoBoost V2</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RoBoost V2. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Download Starting...</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="download-progress">
+                    <div class="progress-circle">
+                        <div class="progress-fill" id="downloadProgress"></div>
+                    </div>
+                    <p id="downloadStatus">Preparing download...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
